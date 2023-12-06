@@ -1,0 +1,42 @@
+estados = []
+
+estados.push('Espirito Santo')
+
+
+estados.push('Rio Grande do Sul')
+
+
+estados.push('Minas Gerais', 'Rio de Janeiro', 'São Paulo')
+
+
+
+estados.insert(0,'Acre','Amapa')
+
+estados.insert(2,'Ceara')
+
+puts estados[4] = "Rio Grandão do sul"
+
+puts estados[1..2]
+puts estados[-1]
+
+puts estados.first
+puts estados.last
+puts estados.count
+
+puts estados.empty?
+cidades = []
+puts cidades.empty?
+
+puts estados.include? ('São Paulo')
+
+puts estados[2]
+estados.delete_at(2)
+puts estados[2]
+
+puts estados
+puts"_______________________________________"
+estados.pop
+puts estados
+
+puts estados.shift
+#deleta o primeiro item
