@@ -1,4 +1,8 @@
+require_relative 'modulo'
+
+
 class Calculadora
+  include Operações
   # def somar (x,y)
   #   return x + y
   # end
@@ -12,7 +16,8 @@ end
 c1 = Calculadora.new
 
 resultado = c1.somar(5,5,10)
-
+puts resultado
+resultado = c1.subtração(100,5,5)
 puts resultado
 
 class Aluno

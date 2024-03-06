@@ -1,12 +1,16 @@
+require_relative 'modulo'
+
+
 class Animal
+  include Comunica
   attr_reader :nome
   def initialize (nome)
     @nome = nome
   end
 
-  def comunicar
-    puts "Olá eu sou a classe mãe ou super classe como preferir"
-  end
+  # def comunicar
+  #   puts "Olá eu sou a classe mãe ou super classe como preferir"
+  # end
 end
 
 a1 = Animal.new("Jacaré")
