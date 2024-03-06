@@ -28,12 +28,19 @@ class Cachorro < Animal
   end
 end
 
-class Gato < Animal
-  attr_reader :raça
+# class Gato < Animal
+#   attr_reader :raça
+#
+#   def initialize(nome,raça)
+#     super (nome)
+#     @raça = raça
+#   end
 
-  def initialize(nome,raça)
-    super (nome)
-    @raça = raça
+
+#herança da Herança
+class Gato < Cachorro
+  def initialize(nome, raça)
+    super nome,raça
   end
 
   def comunicar
