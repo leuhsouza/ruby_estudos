@@ -4,18 +4,19 @@ class Livro
   def initialize(nome,ano,preço)
     @nome =nome
     @ano = ano
-    @preço = preço
+    @preço = dar_desconto (preço)
   end
 
   def mostrar_dados
     puts "Nome: #{@nome}, Ano #{@ano}, Preço R$#{@preço}"
   end
 
-  def dar_desconto
+  private
+  def dar_desconto(preço)
     if @ano < 2000
-      @preço = @preço * 0.9
+     preço * 0.9
     else
-      @preço
+      preço
     end
   end
 end
@@ -23,7 +24,9 @@ end
 
 
 
-l1 = Livro.new("O nome do vento",1999,50.00)
+l1 = Livro.new("O nome do vento",2001,50.00)
 
-l1.dar_desconto
+#só pode ser chamado de dentro da classe
+#l1.dar_desconto
+#
 l1.mostrar_dados
