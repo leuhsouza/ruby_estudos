@@ -1,15 +1,26 @@
 class LogLineParser
+  attr_reader :line
     def initialize(line)
       @line = line
     end
 
     def message
-        #"[<LEVEL>]: <MESSAGE>".
-        @line.sub(/\[<INFO>\]: |\[<WARNING>\]: |\[<ERROR>\]: /, '')
-
+      @line.gsub!('[ERROR]', '')
     end
+
+    def mostrar
+      puts@line
+    end
+
+
+
+
+# asdf = 'foo bar'
+# asdf['bar'] = ''
+# asdf #=> "foo "
+
 end
 
-LogLineParser.new('[ERROR]: Invalid operation').message
-puts separado
-puts@line
+LogLineParser.new ('[ERROR]: Invalid operation').message
+
+
