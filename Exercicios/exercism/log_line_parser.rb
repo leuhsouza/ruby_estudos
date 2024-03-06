@@ -1,16 +1,31 @@
 class LogLineParser
   attr_reader :line
-    def initialize(line)
-      @line = line
-    end
+  def initialize(line)
+    @line = line
+  end
 
-    def message
-      @line.gsub!('[ERROR]', '')
-    end
+  def message
+    @line.split(':')[1].strip
+    teste = @line
+  end
 
-    def mostrar
-      puts@line
-    end
+  def log_level
+    @line.split(':')[0].strip.downcase.gsub(/[\[\]]/,'')
+  end
+
+  
+  def reformat
+      a = @line.split(':')[0]
+      b = @line.split(':')[1]
+      @line = b + a
+      @line.gsub('[', '(').gsub(']', ')')
+
+  end
+
+
+  def mostrar
+    puts@line
+  end
 
 
 
@@ -21,6 +36,10 @@ class LogLineParser
 
 end
 
-LogLineParser.new ('[ERROR]: Invalid operation').message
+al = LogLineParser.new ('[ERROR]: Invalid operation')
+al.message
+al.mostrar
+al.reformat
+al.mostrar
 
 
