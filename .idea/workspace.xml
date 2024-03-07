@@ -11,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/rails/diocourse_rails" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -81,8 +81,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "<unknown>",
-    "last_opened_file_path": "/home/leuhsouza/ruby_estudos",
+    "git-widget-placeholder": "poo-study",
+    "last_opened_file_path": "/home/leuhsouza/dropshipping",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,6 +120,7 @@
       <workItem from="1709548628518" duration="1735000" />
       <workItem from="1709552606466" duration="2742000" />
       <workItem from="1709556053973" duration="1442000" />
+      <workItem from="1709713778504" duration="10712000" />
     </task>
     <task id="LOCAL-00001" summary="feat[add gem and lasagna first step]: add gem">
       <option name="closed" value="true" />
