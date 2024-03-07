@@ -1,4 +1,5 @@
 class AssemblyLine
+    attr_reader :speed
     def initialize(speed)
       @speed = speed
     end
@@ -15,10 +16,15 @@ class AssemblyLine
         end
     end
 
-    
+    def working_items_per_minute
+        wit = (production_rate_per_hour / 60).floor
+    end
 
 
 end
-    a = AssemblyLine.new(5)
+    a = AssemblyLine.new(1)
     p = a.production_rate_per_hour
+    c = a.working_items_per_minute
    
+    puts p
+    puts c
