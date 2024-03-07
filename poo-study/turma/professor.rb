@@ -1,9 +1,10 @@
 require_relative 'pessoa'
 
 class Professor < Pessoa
-  attr_reader :matricula
+  attr_reader :disciplina
 
   def initialize(nome,idade,disciplina)
-    super(n)
+    super(nome,idade)
+    @disciplina = disciplina
   end
 end
