@@ -9,9 +9,17 @@ module SavingsAccount
         else
             rate = 0.3213
 
-    end
+        end
+        end
         def self.annual_balance_update(balance)
-            raise 'Please implement the SavingsAccount.annual_balance_update method'
+            if balance == 0
+                balance
+            else
+            income = SavingsAccount.interest_rate(balance) to_float
+            income + balance
+            end
+        end
+
         end
 
 
