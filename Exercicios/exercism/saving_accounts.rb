@@ -13,10 +13,10 @@ module SavingsAccount
         end
         def self.annual_balance_update(balance)
             if balance == 0
-                balance
-            else
-            income = SavingsAccount.interest_rate(balance) to_float
-            income + balance
+                balance.to_f
+            elsif balance > 0
+            income = SavingsAccount.interest_rate(balance)
+            (income + balance).to_f
             end
         end
 
