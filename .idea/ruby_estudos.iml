@@ -11,6 +11,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="os (v1.1.4, asdf: 3.2.2) [gem]" level="application" />
   </component>
 </module>
