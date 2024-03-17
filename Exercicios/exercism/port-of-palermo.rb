@@ -1,5 +1,5 @@
 module Port
-  PORT = :PALE
+  IDENTIFIER = :PALE
 
   def self.get_identifier(city)
     raise 'Please implement the Port.get_identifier method'
