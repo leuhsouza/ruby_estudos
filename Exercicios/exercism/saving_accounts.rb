@@ -1,6 +1,8 @@
 module SavingsAccount
     def self.interest_rate(balance)
+<<<<<<< HEAD
         if balance > 0 and balance < 1000
+        if balance > 0 and balance <= 999.999
             rate = 0.05
         elsif balance >= 1000 and balance < 5000
             rate = 0.1621
@@ -10,11 +12,26 @@ module SavingsAccount
             rate = 0.3213
         end
 
-    end
+        end
+        end
+        def self.annual_balance_update(balance)
+            if balance == 0
+                balance.to_f
+            elsif balance > 0
+            income = SavingsAccount.interest_rate(balance)
+            (income + balance).to_f
+            end
+        end
+
+        end
 
     def self.annual_balance_update(balance)
         
         balance + balance * (interest_rate(balance) / 100)
+
+        def self.years_before_desired_balance(current_balance, desired_balance)
+            dif = desired_balance - current_balance
+          end
         
     end
 end
